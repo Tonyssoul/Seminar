@@ -5,17 +5,13 @@
 
 a = int(input('Введите число А: '))
 
-num1 = 0
-num2 = 1
-count = 2
-num_i = 0
-while num_i < a:
-    num_i = num1 + num2
+num1, num2 = 0, 1
+count = 1
+while num1 < a:
+    num1, num2 = num2, num1 + num2
     count += 1
-    num1 = num2
-    num2 = num_i
 
-if a == num_i:
+if a == num1:
     print(a,count)
 else:
     print("-1")
