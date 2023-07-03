@@ -2,5 +2,14 @@
 # Input: [1, 1, 2, 0, -1, 3, 4, 4] 
 # Output: 6
 
+#первое решение
 a = [1, 1, 2, 0, -1, 3, 4, 4]
 print(len(set(a)))
+
+#второе решение
+lst_1 = []
+for i in a:
+    if i not in lst_1:
+        lst_1.append(i)
+
+print(len(lst_1))
