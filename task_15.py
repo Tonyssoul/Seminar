@@ -18,4 +18,4 @@ for _ in range(n):
     
 
 
-print(f"Вес максимального арбуза {weightmax}, а вес минимального арбуза {minweight}")
+print('\n', f"Вес максимального арбуза {weightmax}, а вес минимального арбуза {minweight}")
