@@ -15,3 +15,22 @@ for i in range(n):
         lst[i] = min_mark
 
 print(lst)
+
+#с функцией enumirate
+# import random
+
+# n = int(input("Введите количество оценок: "))
+# lst = [random.randint(1, 5) for i in range(n)]
+
+# print(*lst)
+
+# max_num = max(lst)
+# min_num = min(lst)
+
+# print(list(enumerate(lst)))
+
+# for i, val in enumerate(lst):
+# if val == max_num:
+# lst[i] = min_num
+
+# print(*lst)
