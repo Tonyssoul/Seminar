@@ -12,12 +12,22 @@
 # в два шага: сначала вычислить самую большую площадь эллипса, а затем найти и сам эллипс, имеющий такую площадь. 
 # Гарантируется, что самая далекая планета ровно одна
 
+#1
+# def find_orbit(orbits):
+#     dct = {}
+#     for a, b in orbits:
+#         if a != b:
+#             s = a * b
+#             dct[s] = a, b
+#     return dct[max(dct)] 
+# orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)] 
+# print(find_orbit(orbits))
+
+#2
+
 def find_orbit(orbits):
-    dct = {}
-    for a, b in orbits:
-        if a != b:
-            s = a * b
-            dct[s] = a, b
-    return dct[max(dct)] 
+    return max(orbits, key=lambda x: (x[0] != x[1]) * x[0] * x[1])
+
+
 orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)] 
 print(find_orbit(orbits))
